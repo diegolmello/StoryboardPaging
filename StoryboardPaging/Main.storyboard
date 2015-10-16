@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="sOb-U3-254">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller1-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="Page1VC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="ViewController1" customModule="StoryboardPaging" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hGe-8Q-7ph">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                <items>
+                                    <navigationItem title="Page 1" id="ChM-9z-0hw">
+                                        <barButtonItem key="rightBarButtonItem" title="Page 2" id="q2p-p9-su2">
+                                            <connections>
+                                                <action selector="page2Action:" destination="BYZ-38-t0r" id="FCf-v6-Z84"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="hGe-8Q-7ph" secondAttribute="trailing" id="3tt-ZW-482"/>
+                            <constraint firstItem="hGe-8Q-7ph" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="6qm-Ii-hnW"/>
+                            <constraint firstItem="hGe-8Q-7ph" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="PGa-Wx-fOK"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+        <!--Root View Controller-->
+        <scene sceneID="kui-kU-lBO">
+            <objects>
+                <viewController id="sOb-U3-254" customClass="RootViewController" customModule="StoryboardPaging" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="zka-dI-OVY"/>
+                        <viewControllerLayoutGuide type="bottom" id="wZB-Qj-TYg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="mz1-vq-XDy">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1YT-F9-aKr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="976" y="-1038"/>
+        </scene>
+        <!--Page View Controller-->
+        <scene sceneID="idO-8s-o1N">
+            <objects>
+                <pageViewController storyboardIdentifier="PageViewController" autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="gfp-PZ-feo" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HCP-jG-ubW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="976" y="-339"/>
+        </scene>
+        <!--View Controller3-->
+        <scene sceneID="BAS-tw-GdH">
+            <objects>
+                <viewController storyboardIdentifier="Page3VC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="uhU-dM-csd" customClass="ViewController3" customModule="StoryboardPaging" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1Cy-cj-fLc"/>
+                        <viewControllerLayoutGuide type="bottom" id="sXo-dw-LQl"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ikA-rX-mdk">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iZH-HG-Was">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                <items>
+                                    <navigationItem title="Page 3" id="gfc-H5-zPL">
+                                        <barButtonItem key="leftBarButtonItem" title="Page 2" id="i6c-dr-nBZ">
+                                            <connections>
+                                                <action selector="page2Action:" destination="uhU-dM-csd" id="7Xo-8Y-wiR"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="iZH-HG-Was" firstAttribute="top" secondItem="ikA-rX-mdk" secondAttribute="top" id="27j-FQ-Zbh"/>
+                            <constraint firstItem="iZH-HG-Was" firstAttribute="leading" secondItem="ikA-rX-mdk" secondAttribute="leading" id="aTM-Fg-CeF"/>
+                            <constraint firstAttribute="trailing" secondItem="iZH-HG-Was" secondAttribute="trailing" id="wb4-eB-QQ1"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="poe-Q1-Pdk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1657" y="368"/>
+        </scene>
+        <!--View Controller2-->
+        <scene sceneID="y4w-N9-Uen">
+            <objects>
+                <viewController storyboardIdentifier="Page2VC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="3yl-5Z-4oF" customClass="ViewController2" customModule="StoryboardPaging" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="vvN-5C-7eZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="oCg-jQ-Vwz"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="QyM-rF-ZZQ">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oOL-7r-UQo">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                <items>
+                                    <navigationItem title="Page 2" id="a48-XJ-5Sv">
+                                        <barButtonItem key="leftBarButtonItem" title="Page 1" id="G93-Ro-9SW">
+                                            <connections>
+                                                <action selector="page1Action:" destination="3yl-5Z-4oF" id="V8I-aB-oFp"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" title="Page 3" id="jsu-WC-0Z2">
+                                            <connections>
+                                                <action selector="page3Action:" destination="3yl-5Z-4oF" id="9n0-xd-xax"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" red="0.5" green="0.0" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="oOL-7r-UQo" firstAttribute="top" secondItem="QyM-rF-ZZQ" secondAttribute="top" id="Zkh-1J-F9X"/>
+                            <constraint firstAttribute="trailing" secondItem="oOL-7r-UQo" secondAttribute="trailing" id="gm8-RY-r3U"/>
+                            <constraint firstItem="oOL-7r-UQo" firstAttribute="leading" secondItem="QyM-rF-ZZQ" secondAttribute="leading" id="p5q-Kv-Q6l"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3Jc-fh-PAG" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="976" y="368"/>
+        </scene>
+    </scenes>
+</document>
